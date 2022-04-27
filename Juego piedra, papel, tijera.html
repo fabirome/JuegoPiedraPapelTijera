@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, papel o tijera</title>
+</head>
+<body>
+    
+    <script>
+        console.log("Resultado del juego: ", computerPlay("rock", "scissors")); 
+      function computerPlay(playerSelection, computerSelection)
+      {
+          if (playerSelection=="paper" && computerSelection=="rock"){
+              return "Ganador";
+          }
+          else if (playerSelection=="paper" && computerSelection=="scissors"){
+              return "Perdedor";
+          }
+          else if (playerSelection=="paper" && computerSelection=="paperk"){
+              return "Empate";
+          }
+          else if (playerSelection=="rock" && computerSelection=="rock"){
+              return "Empate";
+          }
+          else if (playerSelection=="rock" && computerSelection=="paper"){
+              return "Ganador";
+          }
+          else if (playerSelection=="rock" && computerSelection=="scissors"){
+              return "Ganador";
+          }
+          else if (playerSelection=="scissors" && computerSelection=="rock"){
+              return "Perdedor";
+          }
+          else if (playerSelection=="scissors" && computerSelection=="scissors"){
+              return "Empate";
+          }
+          else if (playerSelection=="scissors" && computerSelection=="paper"){
+              return "Ganador";
+          }
+    
+       
+
+      }
+    </script>
+</body>
+</html>
